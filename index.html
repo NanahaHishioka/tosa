@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>高知カフェマップ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="controls">
+  <label>
+    <input type="checkbox" id="openOnly">
+    営業中のみ
+  </label>
+
+  評価：
+  <select id="rating">
+    <option value="0">指定なし</option>
+    <option value="4">★4以上</option>
+    <option value="4.5">★4.5以上</option>
+  </select>
+
+  高知駅から：
+  <select id="minutes">
+    <option value="999">指定なし</option>
+    <option value="5">5分以内</option>
+    <option value="10">10分以内</option>
+    <option value="15">15分以内</option>
+  </select>
+</div>
+
+<div id="map"></div>
+
+<!-- JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
 
